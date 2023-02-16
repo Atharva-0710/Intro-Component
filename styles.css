@@ -1,0 +1,147 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Merriweather+Sans:ital,wght@1,500&family=Montserrat:wght@200;300&family=Outfit:wght@300&family=Poppins:wght@100;200;300;400;600&family=Sacramento&family=Ubuntu:wght@300&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    padding: 3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4%;
+}
+
+.info {
+    /* max-width: 63%; */
+    padding: 5rem 2rem 5rem 3rem;
+}
+
+.info h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.info p {
+    font-size: 0.6rem;
+}
+
+/* cta section  */
+
+/* .cta {
+    margin-right: 5%;
+} */
+
+.cta-line {
+    background-color: hsl(248, 32%, 49%);
+    padding: 0.8rem 2rem;
+    font-size: 0.65rem;
+    text-align: center;
+    border-radius: 9px;
+    margin-top: 9%;
+    box-shadow: 0 3px rgb(157, 155, 155);
+}
+
+
+form {
+    background-color: white;
+    text-align: center;
+    border-radius: 5%;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 3px rgb(157, 155, 155);
+    max-width: 80%;
+}
+
+.inp {
+    margin: 0.5rem;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    /* size: 50px; */
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 8rem;
+    text-align: left;
+}
+
+button {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 6rem;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 59%, 46%);
+}
+
+.form-foot {
+    color: grey;
+    font-size: 0.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Media query */
+@media (max-width: 560px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 22rem;
+        background-image: url(images/bg-intro-mobile.png);
+        text-align: center;
+    }
+
+    .info {
+        padding: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .cta-line {
+        padding: 1rem 5rem;
+        font-size: 1rem;
+        margin-top: 0.5%;
+    }
+
+    footer {
+        display: block;
+        position: relative;
+        bottom: 0;
+    }
+
+}
